@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: asia.gcr.io/effective-might-323902/hello-world-k8s-kyaw:v3
+        image: asia.gcr.io/effective-might-323902/hello-world-k8s-kyaw
         envFrom:
         - configMapRef:
             name: hello-world-k8s-kyaw-env
