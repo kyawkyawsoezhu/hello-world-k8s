@@ -16,11 +16,11 @@ steps:
   - id: Build
     name: gcr.io/cloud-builders/docker
     entrypoint: bash
-    args: ["-c", "docker build -t hello-world-k8s . -f Dockerfile"]
+    args: ["-c", "docker build -t asia.gcr.io/effective-might-323902/hello-world-k8s-kyaw . -f Dockerfile"]
 
   - id: Push
     name: gcr.io/cloud-builders/docker
-    args: ["push", "asia.gcr.io/effective-might-323902/hello-world-k8s"]
+    args: ["push", "asia.gcr.io/effective-might-323902/hello-world-k8s-kyaw"]
 
   # - id: Prepare deploy
   #   name: gcr.io/cloud-builders/gke-deploy
@@ -49,7 +49,7 @@ steps:
 
   - id: Apply deploy
     name: gcr.io/cloud-builders/gke-deploy
-    args: ["apply", "--filename=kube-deployment.yml", "--cluster=jeremy-cluster", "--location=asia-southeast1", "--namespace=jeremy"]
+    args: ["apply", "--filename=kube-deployment.yml", "--cluster=kyaw-cluster", "--location=asia-southeast1", "--namespace=kyaw"]
 
 options:
   substitutionOption: ALLOW_LOOSE
