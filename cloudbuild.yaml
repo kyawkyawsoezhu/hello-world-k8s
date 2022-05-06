@@ -47,7 +47,7 @@ steps:
 
   - id: Apply deploy
     name: gcr.io/cloud-builders/gke-deploy
-    args: ["apply", "--filename=kube-deployment.yaml"]
+    args: ["apply", "--filename=kube-deployment.yaml", "--cluster=kyaw-cluster", "--location=asia-southeast1"]
     env:
     - 'CLOUDSDK_COMPUTE_ZONE=$_GKE_LOCATION'
     - 'CLOUDSDK_CONTAINER_CLUSTER=$_GKE_CLUSTER'
