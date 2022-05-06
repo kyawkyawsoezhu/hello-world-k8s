@@ -1,3 +1,0 @@
-configMapGenerator:
-- name: hello-world-k8s-kyaw-env
-

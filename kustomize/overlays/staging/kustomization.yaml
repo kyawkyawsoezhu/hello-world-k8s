@@ -1,4 +1,4 @@
 bases:
-- ../../base
+  - ../../base
 generators:
-- configMapGenerator.yaml
+  - configMapGenerator.yaml
