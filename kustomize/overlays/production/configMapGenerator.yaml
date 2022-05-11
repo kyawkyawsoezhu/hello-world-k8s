@@ -1,6 +1,0 @@
-apiVersion: builtin
-kind: ConfigMapGenerator
-metadata:
-  name: hello-world-k8s-kyaw-env
-envs:
-- name.env
