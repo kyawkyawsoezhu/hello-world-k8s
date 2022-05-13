@@ -1,4 +1,2 @@
 resources:
   - kube-deployment.yaml
-generatorOptions:
-  disableNameSuffixHash: true
