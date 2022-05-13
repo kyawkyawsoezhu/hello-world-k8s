@@ -4,3 +4,5 @@ metadata:
   name: hello-world-k8s-kyaw-env
 envs:
   - application.properties
+options:
+    disableNameSuffixHash: true

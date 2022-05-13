@@ -1,6 +1,4 @@
 bases:
   - ../../base
-generatorOptions:
-  disableNameSuffixHash: true
 generators:
   - configmap-generator.yaml
