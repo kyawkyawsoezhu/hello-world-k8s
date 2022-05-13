@@ -4,8 +4,8 @@ steps:
     args:
     - kms
     - decrypt
-    - "--ciphertext-file=kubernetes/overlays/$_KUSTOMIZE_ENV/application-secrets.properties.encrypted"
-    - "--plaintext-file=kubernetes/overlays/$_KUSTOMIZE_ENV/application-secrets.properties"
+    - "--ciphertext-file=kubernetes/overlays/$_KUSTOMIZE_ENV/application-secret.properties.encrypted"
+    - "--plaintext-file=kubernetes/overlays/$_KUSTOMIZE_ENV/application-secret.properties"
     - "--location=$_GKE_LOCATION"
     - "--keyring=kyaw-key-ring"
     - "--key=hello-world-k8s"
